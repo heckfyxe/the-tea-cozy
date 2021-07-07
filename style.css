@@ -129,14 +129,8 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    .logo {
-        clear: left;
-    }
-
     header {
-        height: min-content;
         position: static;
-        z-index: 0;
     }
 
     #our-mission div {
@@ -146,7 +140,6 @@ footer {
     nav {
         width: 100%;
         margin: 10px auto 0;
-        clear: left;
         text-align: center;
     }
 
