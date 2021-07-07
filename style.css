@@ -69,7 +69,7 @@ main {
 
 #our-mission div {
     width: 100%;
-    background-color: black;
+    background-color: #191919;
 }
 
 #tea-of-month {
@@ -129,21 +129,28 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    header {
-        height: auto;
-        position: relative;
+    .logo {
+        clear: left;
     }
+
+    header {
+        height: min-content;
+        position: static;
+        z-index: 0;
+    }
+
+    #our-mission div {
+        background-color: black;
+    }
+
     nav {
         width: 100%;
-        margin: auto;
+        margin: 10px auto 0;
         clear: left;
-        float: none;
         text-align: center;
     }
+
     li {
         display: block;
-    }
-    main {
-        position: static;
     }
 }
