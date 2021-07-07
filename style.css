@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    background-color: black;
+    opacity: 0.9;
+    font-family: Helvetica, serif;
+    font-size: 22px;
+    color: seashell;
+}
+
+a {
+    color: seashell;
+}
+
+h2, h4, h5, figcaption {
+    text-align: center;
+}
+
+header {
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 69px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+li {
+    display: inline;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+main {
+    position: relative;
+    top: 69px;
+}
+
+.our-mission {
+    width: 100%;
+    height: 40vw;
+    background-image: url("images/mission-background.webp");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.our-mission div {
+    width: 100%;
+    background-color: black;
+}
+
+.tea-of-month {
+    margin-top: 80px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+figure {
+    width: 300px;
+    overflow: hidden;
+    display: block;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.locations {
+    width: 100%;
+    min-height: 50vw;
+    margin-top: 40px;
+    background-image: url("images/locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.locations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.location-card {
+    width: 300px;
+    background-color: black;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 90px;
+}
+
+.copyright {
+    margin: 20px;
+    font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+    nav {
+        width: 100%;
+        margin: auto;
+        clear: left;
+        float: none;
+        text-align: center;
+    }
+    li {
+        display: block;
+    }
+    main {
+        position: static;
+    }
+}
