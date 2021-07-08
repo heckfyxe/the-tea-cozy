@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 html {
     background-color: black;
     opacity: 0.9;
@@ -26,22 +21,20 @@ h2, h4, h5, figcaption {
 header {
     top: 0;
     left: 0;
+    right: 0;
     background-color: black;
     height: 69px;
     position: fixed;
-    width: 100%;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     height: 50px;
+    width: 160px;
     margin-top: 10px;
     margin-left: 10px;
-    float: left;
-}
-
-nav {
-    float: right;
 }
 
 li {
@@ -56,7 +49,7 @@ main {
 }
 
 #our-mission {
-    width: 100%;
+    right: 0;
     height: 40vw;
     background-image: url("images/mission-background.webp");
     background-repeat: no-repeat;
@@ -131,6 +124,13 @@ footer {
 @media only screen and (max-width: 600px) {
     header {
         position: static;
+        flex-flow: column;
+        align-items: center;
+        height: auto;
+    }
+
+    main {
+        top: 0;
     }
 
     #our-mission div {
@@ -138,8 +138,6 @@ footer {
     }
 
     nav {
-        width: 100%;
-        margin: 10px auto 0;
         text-align: center;
     }
 
